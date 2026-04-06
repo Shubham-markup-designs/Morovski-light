@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "name": "LED Light",
+    "price": 1200,
+    "stock": 10,
+    "image": "/images/light.jpg"
+  }
+]
