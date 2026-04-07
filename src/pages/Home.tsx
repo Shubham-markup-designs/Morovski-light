@@ -1,26 +1,36 @@
-import { useQuery } from "@tanstack/react-query";
-import { getProducts } from "../api/productApi";
-import type { Product } from "../api/types";
+import Categories from "../components/categories/categories";
+import Banner from "../components/home/Banner";
+import Midbanner from "../components/home/Midbanner";
+import ProductShowcaseSection from "../components/products/ProductShowcaseSection";
+import {
+  getBestSellerProducts,
+  getFeaturedProducts,
+} from "../api/productApi";
+import Video from "../components/home/Video";
 
 const Home = () => {
-  const { data, isLoading } = useQuery<Product[]>({
-    queryKey: ["products"],
-    queryFn: getProducts,
-  });
-
-  if (isLoading) return <p>Loading...</p>;
-
   return (
-    <div>
-        Helloworld
-
-        
-      {data?.map((item) => (
-        <div key={item.id}>
-          <h2>{item.name}</h2>
-          <p>₹{item.price}</p>
-        </div>
-      ))}
+    <div className="pb-16">
+      <Banner />
+      <Categories />
+      <Video />
+      <ProductShowcaseSection
+        queryKey="featured-products"
+        queryFn={getFeaturedProducts}
+        watermark="New Arrivals"
+        title="Just Landed"
+        description="Precision-engineered LEDs, drivers and architectural fixtures for commercial and residential projects of lasting quality."
+        viewAllHref="/new-arrivals"
+      />
+      <Midbanner />
+      <ProductShowcaseSection
+        queryKey="best-seller-products"
+        queryFn={getBestSellerProducts}
+        watermark="Featured Products"
+        title="Bestsellers This Season"
+        description="Precision-engineered LEDs, drivers and architectural fixtures for commercial and residential projects of lasting quality."
+        viewAllHref="/best-sellers"
+      />
     </div>
   );
 };

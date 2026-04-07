@@ -1,9 +1,13 @@
 [
   {
-    "id": 1,
-    "name": "LED Light",
-    "price": 1200,
+    "id": 101,
+    "name": "Architectural Wall Ring Light",
+    "sku": "SKU - 001",
+    "price": 3750,
+    "originalPrice": 5750,
+    "rating": 4.5,
     "stock": 10,
-    "image": "/images/light.jpg"
+    "image": "collection-hanging-light-fixtures-warmly-lit-interior.png",
+    "href": "/products/architectural-wall-ring-light"
   }
 ]

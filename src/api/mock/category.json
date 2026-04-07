@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "LED Strips",
+    "image": "collection-hanging-light-fixtures-warmly-lit-interior.png",
+    "href": "/categories/led-strips"
+  },
+  {
+    "id": 2,
+    "name": "Fixtures",
+    "image": "collection-hanging-light-fixtures-warmly-lit-interior-1.png",
+    "href": "/categories/fixtures"
+  },
+  {
+    "id": 3,
+    "name": "Waterproof",
+    "image": "generative-ai-image-gentle-raindrops-wet-glass-window-illuminated-with-soft-orange-lamp.png",
+    "href": "/categories/waterproof"
+  },
+  {
+    "id": 4,
+    "name": "Industrial",
+    "image": "generative-ai-image-gentle-raindrops-wet-glass-window-illuminated-with-soft-orange-lamp-1.png",
+    "href": "/categories/industrial"
+  },
+  {
+    "id": 5,
+    "name": "Dimmable",
+    "image": "modern-basement-with-enchanting-ambiance-illuminated-by-led-strips-that-create-vibrant.png",
+    "href": "/categories/dimmable"
+  },
+  {
+    "id": 6,
+    "name": "Drivers",
+    "image": "modern-basement-with-enchanting-ambiance-illuminated-by-led-strips-that-create-vibrant-1.png",
+    "href": "/categories/drivers"
+  }
+]

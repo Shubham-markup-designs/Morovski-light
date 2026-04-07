@@ -1,0 +1,46 @@
+[
+  {
+    "id": 201,
+    "name": "Tunable White LED Strip 5M",
+    "sku": "SKU - 001",
+    "price": 2200,
+    "originalPrice": 5750,
+    "rating": 4.5,
+    "stock": 18,
+    "image": "collection-hanging-light-fixtures-warmly-lit-interior.png",
+    "href": "/products/tunable-white-led-strip-5m"
+  },
+  {
+    "id": 202,
+    "name": "DALI Driver 50W",
+    "sku": "SKU - 001",
+    "price": 4100,
+    "originalPrice": 5750,
+    "rating": 4.5,
+    "stock": 9,
+    "image": "generative-ai-image-gentle-raindrops-wet-glass-window-illuminated-with-soft-orange-lamp-1.png",
+    "href": "/products/dali-driver-50w"
+  },
+  {
+    "id": 203,
+    "name": "Recessed Downlight 12W",
+    "sku": "SKU - 001",
+    "price": 890,
+    "originalPrice": 2750,
+    "rating": 4.5,
+    "stock": 24,
+    "image": "generative-ai-image-gentle-raindrops-wet-glass-window-illuminated-with-soft-orange-lamp.png",
+    "href": "/products/recessed-downlight-12w"
+  },
+  {
+    "id": 204,
+    "name": "Magnetic Track Light 20W",
+    "sku": "SKU - 001",
+    "price": 5500,
+    "originalPrice": 5750,
+    "rating": 4.5,
+    "stock": 7,
+    "image": "modern-basement-with-enchanting-ambiance-illuminated-by-led-strips-that-create-vibrant.png",
+    "href": "/products/magnetic-track-light-20w"
+  }
+]

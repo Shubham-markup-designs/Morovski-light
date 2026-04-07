@@ -1,0 +1,46 @@
+[
+  {
+    "id": 301,
+    "name": "50W LED Panel, Cool White",
+    "sku": "SKU - 001",
+    "price": 3750,
+    "originalPrice": 5750,
+    "rating": 4.5,
+    "stock": 14,
+    "image": "collection-hanging-light-fixtures-warmly-lit-interior-1.png",
+    "href": "/products/50w-led-panel-cool-white"
+  },
+  {
+    "id": 302,
+    "name": "Luxury Ring Chandelier",
+    "sku": "SKU - 001",
+    "price": 3750,
+    "originalPrice": 5750,
+    "rating": 4.5,
+    "stock": 12,
+    "image": "modern-basement-with-enchanting-ambiance-illuminated-by-led-strips-that-create-vibrant-1.png",
+    "href": "/products/luxury-ring-chandelier"
+  },
+  {
+    "id": 303,
+    "name": "Outdoor Cane Pendant",
+    "sku": "SKU - 001",
+    "price": 3750,
+    "originalPrice": 5750,
+    "rating": 4.5,
+    "stock": 8,
+    "image": "view-futuristic-lighting-lamp-design.png",
+    "href": "/products/outdoor-cane-pendant"
+  },
+  {
+    "id": 304,
+    "name": "Decor Accent Table Lamp",
+    "sku": "SKU - 001",
+    "price": 3750,
+    "originalPrice": 5750,
+    "rating": 4.5,
+    "stock": 11,
+    "image": "hero.png",
+    "href": "/products/decor-accent-table-lamp"
+  }
+]

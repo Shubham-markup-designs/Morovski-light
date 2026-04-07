@@ -53,11 +53,10 @@
 }
 
 #root {
-  width: 1126px;
+  width: 100%;
   max-width: 100%;
   margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
+  /* text-align: center; */
   min-height: 100svh;
   display: flex;
   flex-direction: column;
@@ -72,13 +71,13 @@ h1,
 h2 {
   font-family: var(--heading);
   font-weight: 500;
-  color: var(--text-h);
+  /* color: var(--text-h); */
 }
 
 h1 {
   font-size: 56px;
   letter-spacing: -1.68px;
-  margin: 32px 0;
+  /* margin: 32px 0; */
   @media (max-width: 1024px) {
     font-size: 36px;
     margin: 20px 0;
@@ -93,9 +92,9 @@ h2 {
     font-size: 20px;
   }
 }
-p {
+/* p {
   margin: 0;
-}
+} */
 
 code,
 .counter {
