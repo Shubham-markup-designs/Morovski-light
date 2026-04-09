@@ -32,7 +32,7 @@ const ProductShowcaseSection = ({
           <p className="pointer-events-none absolute left-1/2 top-0 -z-10 w-full -translate-x-1/2 -translate-y-8 text-[3.8rem] font-semibold leading-none tracking-[-0.06em] text-stone-100 md:text-[7rem]">
             {watermark}
           </p>
-          <h2 className="text-[2.5rem] font-semibold tracking-[-0.04em] text-stone-950 md:text-[3.5rem]">
+          <h2 className="text-[3.5rem] font-semibold tracking-[-0.04em] text-stone-950 md:text-5xl">
             {title}
           </h2>
           <p className="mx-auto mt-4 max-w-[38ch] text-base leading-8 text-stone-700 md:text-lg">

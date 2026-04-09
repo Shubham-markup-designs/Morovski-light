@@ -15,7 +15,7 @@ const Categories = () => {
     <section className="px-4 py-10 md:px-6 md:py-14">
       <div className="mx-auto max-w-[1440px]">
         <div className="mx-auto max-w-[520px] text-center">
-          <h2 className="text-[2.5rem] font-semibold tracking-[-0.04em] text-stone-950 md:text-[3.5rem]">
+          <h2 className="text-[3.5rem] font-semibold tracking-[-0.04em] text-stone-950 md:text-5xl">
             Our Categories
           </h2>
           <p className="mt-4 text-base leading-8 text-stone-700 md:text-lg">

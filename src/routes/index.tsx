@@ -5,6 +5,9 @@ import AuthLayout from "../layouts/AuthLayout";
 import Home from "../pages/Home";
 import Login from "../modules/auth/pages/Login";
 import Register from "../modules/auth/pages/Register";
+import ForgotPassword from "../modules/auth/pages/ForgotPassword";
+import { EmailSent } from "../modules/auth/pages/EmailSent";
+import ResetPassword from "../modules/auth/pages/ResetPassword";
 
 const MainWrapper = () => (
   <MainLayout>
@@ -32,6 +35,9 @@ const AppRoutes = () => {
         <Route element={<AuthWrapper />}>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/email-sent" element={<EmailSent />} />
+          <Route path="/reset-password" element={<ResetPassword />} />
         </Route>
 
       </Routes>

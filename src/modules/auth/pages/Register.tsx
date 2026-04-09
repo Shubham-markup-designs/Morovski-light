@@ -1,82 +1,40 @@
-import React, { useState } from 'react';
+import { useState } from "react";
+import RegisterForm from "../components/RegisterForm";
+import { B2BRegisterForm } from "../components/B2BRegisterForm";
 
-interface RegisterFormData {
-    email: string;
-    password: string;
-    confirmPassword: string;
-}
+const Register = () => {
+  const [type, setType] = useState<"b2c" | "b2b">("b2c");
 
-const Register: React.FC = () => {
-    const [formData, setFormData] = useState<RegisterFormData>({
-        email: '',
-        password: '',
-        confirmPassword: '',
-    });
-    const [errors, setErrors] = useState<Partial<RegisterFormData>>({});
+  return (
+    <div className="space-y-6">
+      <div className="mx-auto flex max-w-md rounded-full border border-white/60 bg-black/35 p-1 backdrop-blur-md">
+        <button
+          type="button"
+          onClick={() => setType("b2c")}
+          className={`flex-1 rounded-full px-5 py-3 text-sm font-medium transition sm:text-base ${
+            type === "b2c"
+              ? "bg-white text-black shadow-[0_10px_30px_rgba(255,255,255,0.18)]"
+              : "text-white/85"
+          }`}
+        >
+          Personal
+        </button>
+        <button
+          type="button"
+          onClick={() => setType("b2b")}
+          className={`flex-1 rounded-full px-5 py-3 text-sm font-medium transition sm:text-base ${
+            type === "b2b"
+              ? "bg-white text-black shadow-[0_10px_30px_rgba(255,255,255,0.18)]"
+              : "text-white/85"
+          }`}
+        >
+          Business
+        </button>
+      </div>
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const { name, value } = e.target;
-        setFormData(prev => ({ ...prev, [name]: value }));
-    };
-
-    const validate = (): boolean => {
-        const newErrors: Partial<RegisterFormData> = {};
-        if (!formData.email) newErrors.email = 'Email is required';
-        if (!formData.password) newErrors.password = 'Password is required';
-        if (formData.password !== formData.confirmPassword) newErrors.confirmPassword = 'Passwords do not match';
-        setErrors(newErrors);
-        return Object.keys(newErrors).length === 0;
-    };
-
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        if (validate()) {
-            // Handle registration logic here, e.g., API call
-            console.log('Registering user:', formData);
-        }
-    };
-
-    return (
-        <div>
-            <h2>Register</h2>
-            <form onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="email">Email:</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                    />
-                    {errors.email && <span>{errors.email}</span>}
-                </div>
-                <div>
-                    <label htmlFor="password">Password:</label>
-                    <input
-                        type="password"
-                        id="password"
-                        name="password"
-                        value={formData.password}
-                        onChange={handleChange}
-                    />
-                    {errors.password && <span>{errors.password}</span>}
-                </div>
-                <div>
-                    <label htmlFor="confirmPassword">Confirm Password:</label>
-                    <input
-                        type="password"
-                        id="confirmPassword"
-                        name="confirmPassword"
-                        value={formData.confirmPassword}
-                        onChange={handleChange}
-                    />
-                    {errors.confirmPassword && <span>{errors.confirmPassword}</span>}
-                </div>
-                <button type="submit">Register</button>
-            </form>
-        </div>
-    );
+      {type === "b2c" ? <RegisterForm /> : <B2BRegisterForm />}
+    </div>
+  );
 };
 
 export default Register;

@@ -10,7 +10,7 @@ const CategoryCard = ({ name, image, href }: CategoryCardProps) => {
   return (
     <Link
       to={href}
-      className="group relative block min-h-[240px] overflow-hidden rounded-[18px] bg-stone-200 md:min-h-[250px]"
+      className="group relative block min-h-[300px] overflow-hidden rounded-[18px] bg-stone-200 md:min-h-[320px]"
     >
       <img
         src={image}
