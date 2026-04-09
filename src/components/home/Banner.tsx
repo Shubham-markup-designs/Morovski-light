@@ -9,10 +9,8 @@ const Banner = () => {
         className="relative mx-auto flex min-h-[850px] w-full items-end overflow-hidden bg-[#20160f] bg-cover bg-center bg-no-repeat p-5 text-left shadow-[0_24px_80px_rgba(0,0,0,0.28)] md:min-h-[740px] md:p-10"
         style={{ backgroundImage: `url(${bannerImage})` }}
       >
-        {/* <div className="absolute inset-0 bg-gradient-to-r from-[rgba(11,10,14,0.62)] via-[rgba(30,19,11,0.2)] to-[rgba(28,15,8,0.34)]" />
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.06),rgba(255,255,255,0)_18%,rgba(0,0,0,0.28))]" /> */}
-
-        <div className="relative z-10 flex w-full items-end justify-between gap-8 md:min-h-[520px]">
+      
+        <div className="relative z-10 flex flex-col md:flex-row w-full items-end justify-between gap-8 md:min-h-[520px]">
           <div className="max-w-[580px] rounded-[26px] border border-white/35 bg-[linear-gradient(180deg,rgba(140,149,158,0.34),rgba(217,184,145,0.2)_62%,rgba(55,37,24,0.24))] p-5 text-white shadow-[0_20px_60px_rgba(0,0,0,0.24)] backdrop-blur-xl md:mt-auto md:p-7">
             <p className="text-sm font-light tracking-[0.02em] text-white/85 md:text-base">
               Professional Lighting Solutions
